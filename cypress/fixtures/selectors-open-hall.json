@@ -1,0 +1,8 @@
+{
+    "herculesHall": "#start-sales > div:nth-child(2) > ul > li:nth-child(6) > input",
+    "openMessage": "#start-sales > .text-center > .conf-step__paragraph",
+    "openButton": "#start-sales .conf-step__button",
+    "selectTime": ".conf-step__seances-timeline",
+    "book": "#hall-configuration > .conf-step__wrapper > .conf-step__buttons > .conf-step__button-accent",
+    "success": "#price-configuration > .conf-step__wrapper > .conf-step__buttons > .conf-step__button-accent"
+}
