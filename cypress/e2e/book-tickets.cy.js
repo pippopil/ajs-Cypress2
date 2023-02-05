@@ -1,11 +1,11 @@
-
+describe("Booking tickets tests", () => {
     it("Should check the hall from the admin page and book tickets", () => {
       const selector = require("../fixtures/selectors-open-hall.json");
       const login = require("../fixtures/login-info.json");
   
       cy.visit("http://qamid.tmweb.ru/admin/");
       cy.login(login.validEmail, login.validPassword);
-      
+      cy.get(selector.herculesHall).click();
       cy.get(selector.openMessage).should(
         "have.text",
         "Продажа билетов открыта!!!"
@@ -31,5 +31,6 @@
       
 
     });
+  });
     
  
