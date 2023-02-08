@@ -6,4 +6,6 @@
     "book": "#hall-configuration > .conf-step__wrapper > .conf-step__buttons > .conf-step__button-accent",
     "success": "#price-configuration > .conf-step__wrapper > .conf-step__buttons > .conf-step__button-accent"
     
+    
+    
 }

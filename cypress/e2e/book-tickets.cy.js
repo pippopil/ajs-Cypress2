@@ -1,3 +1,4 @@
+
 describe("Booking tickets tests", () => {
     it("Should check the hall from the admin page and book tickets", () => {
       const selector = require("../fixtures/selectors-open-hall.json");
@@ -5,6 +6,7 @@ describe("Booking tickets tests", () => {
   
       cy.visit("http://qamid.tmweb.ru/admin/");
       cy.login(login.validEmail, login.validPassword);
+      
       cy.get(selector.herculesHall).click();
       cy.get(selector.openMessage).should(
         "have.text",
@@ -24,13 +26,15 @@ describe("Booking tickets tests", () => {
       });
       cy.get(selector.book).click();
       cy.get(selector.success).should("be.visible").and("not.be.disabled");
-      cy.visit("http://qamid.tmweb.ru/client/index.php")
+      cy.visit("http://qamid.tmweb.ru/client/index.php");
       cy.get(':nth-child(3) > .movie-seances__time').click();
       cy.get(':nth-child(7) > :nth-child(9)').click();
       cy.get('.acceptin-button').click();
       
-
-    });
-  });
-    
+ 
+      
+      
+});
+ }); 
+ 
  
